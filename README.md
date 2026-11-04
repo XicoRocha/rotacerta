@@ -14,7 +14,7 @@ As corporações de bombeiros recebem do SGTD uma listagem diária de serviços 
 |---|---|
 | Francisco Rocha (a22401621) | Scrum Master (Sprint 0) · Developer |
 | João Mouta (a22409272) | Developer |
-| Ernelson Barros (a22511572) | Developer |
+| Ernelson Barros (a22511572) | Scrum Master (Sprint 1) · Developer |
 
 Product Owner: docente da UC. O papel de Scrum Master roda a cada sprint.
 
