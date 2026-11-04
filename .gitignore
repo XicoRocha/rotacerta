@@ -1,0 +1,22 @@
+# dependências e builds
+node_modules/
+__pycache__/
+.venv/
+venv/
+dist/
+
+# sistema / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+
+# dados reais NUNCA entram no repositório (RGPD)
+dados_reais/
+*.xlsx
+*.xls
+*_real.csv
+
+# ficheiros temporários do Word
+~$*

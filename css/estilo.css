@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Segoe UI", Arial, sans-serif; color: #1b2a41; background: #f4f6f9; }
+
+header { padding: 14px 20px; background: #1b2a41; color: #fff; }
+header h1 { margin: 0; font-size: 22px; }
+header h1 span { font-size: 13px; font-weight: 400; color: #9fb3c8; margin-left: 8px; }
+header p { margin: 4px 0 0; font-size: 13px; color: #c9d2dc; }
+
+main { display: flex; height: calc(100vh - 74px); }
+.painel { width: 340px; padding: 16px; overflow-y: auto; background: #fff; border-right: 1px solid #dde3ea; }
+#mapa { flex: 1; }
+
+label { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #5b6b7f; }
+select { width: 100%; margin: 6px 0 12px; padding: 8px; font-size: 14px; border: 1px solid #c9d2dc; border-radius: 6px; }
+
+.modo { display: flex; gap: 6px; margin-bottom: 12px; }
+.modo button { flex: 1; padding: 8px; border: 1px solid #c9d2dc; background: #fff; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.modo button.ativo { background: #1b2a41; color: #fff; border-color: #1b2a41; }
+
+.cartoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.cartao { padding: 8px; border: 1px solid #dde3ea; border-radius: 6px; text-align: center; }
+.cartao small { display: block; font-size: 11px; color: #5b6b7f; }
+.cartao strong { font-size: 14px; }
+.cartao.destaque { background: #e7f6f4; border-color: #0f9d8f; }
+
+.info { font-size: 13px; color: #5b6b7f; }
+ol { padding-left: 20px; font-size: 14px; line-height: 1.7; }
+.nota { font-size: 11px; color: #8796a8; border-top: 1px solid #eef1f4; padding-top: 8px; }
+
+.pino { width: 26px; height: 26px; border-radius: 50%; color: #fff; font: 700 12px/26px system-ui, sans-serif; text-align: center; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); }
+.pino.recolha { background: #2e74b5; }
+.pino.quartel { background: #1b2a41; }
+.pino.destino { background: #c0392b; }
+
+@media (max-width: 760px) {
+  main { flex-direction: column; height: auto; }
+  .painel { width: 100%; border-right: 0; }
+  #mapa { height: 60vh; }
+}
+.sem-mapa { padding: 40px; text-align: center; color: #5b6b7f; }

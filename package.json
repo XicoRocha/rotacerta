@@ -1,0 +1,10 @@
+{
+  "name": "rotacerta",
+  "version": "0.1.0",
+  "description": "Rotas otimizadas para o transporte não urgente de doentes — protótipo do Sprint 1",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RotaCerta — protótipo</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>RotaCerta <span>protótipo · Sprint 1</span></h1>
+    <p>Transporte não urgente de doentes: ordem da listagem vs. ordem otimizada. Dados fictícios.</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <label for="motorista">Motorista</label>
+      <select id="motorista"></select>
+
+      <div class="modo">
+        <button id="btnListagem" class="ativo">Ordem da listagem</button>
+        <button id="btnOtimizada">Ordem otimizada</button>
+      </div>
+
+      <div class="cartoes">
+        <div class="cartao"><small>Listagem</small><strong id="kmListagem">–</strong></div>
+        <div class="cartao"><small>Otimizada</small><strong id="kmOtimizada">–</strong></div>
+        <div class="cartao destaque"><small>Poupança</small><strong id="poupanca">–</strong></div>
+      </div>
+
+      <p id="info" class="info"></p>
+      <ol id="paragens"></ol>
+      <p class="nota">Ordem otimizada: testa todas as ordens possíveis. Distâncias em linha reta (haversine). No Sprint 2: distâncias por estrada (OSRM) e otimização com horas de consulta (OR-Tools).</p>
+    </section>
+
+    <div id="mapa"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/rotas.js"></script>
+  <script src="data/servicos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
